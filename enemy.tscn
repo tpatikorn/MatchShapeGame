@@ -1,0 +1,41 @@
+[gd_scene load_steps=2 format=3 uid="uid://bufsrg01ml6ew"]
+
+[ext_resource type="Script" path="res://enemy.gd" id="1_poypk"]
+
+[node name="Enemy" type="Node2D"]
+script = ExtResource("1_poypk")
+
+[node name="Rectangle" type="Polygon2D" parent="."]
+visible = false
+position = Vector2(916, -274)
+polygon = PackedVector2Array(23, 300, 23, 414, 189, 414, 189, 300)
+
+[node name="Triangle" type="Polygon2D" parent="."]
+visible = false
+position = Vector2(916, -274)
+polygon = PackedVector2Array(111, 303, 24, 414, 189, 414)
+
+[node name="Pentagon" type="Polygon2D" parent="."]
+visible = false
+position = Vector2(916, -274)
+polygon = PackedVector2Array(25, 337, 55, 415, 155, 415, 187, 339, 105, 298)
+
+[node name="Hexagon" type="Polygon2D" parent="."]
+position = Vector2(898, 3)
+polygon = PackedVector2Array(121, 2, 194, 46, 194, 122, 119, 160, 47, 125, 47, 42)
+
+[node name="HP Text" type="Label" parent="."]
+offset_left = 769.0
+offset_top = 45.0
+offset_right = 835.0
+offset_bottom = 112.0
+theme_override_font_sizes/font_size = 48
+text = "HP"
+
+[node name="HP" type="Label" parent="."]
+offset_left = 871.0
+offset_top = 48.0
+offset_right = 912.0
+offset_bottom = 115.0
+theme_override_font_sizes/font_size = 48
+text = "0"
