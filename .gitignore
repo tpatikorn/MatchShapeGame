@@ -2,4 +2,4 @@
 .godot/
 addons/godot-git-plugin/git_plugin.gdextension
 addons/
-.tmp
+*.tmp
